@@ -1,5 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - PhD学者</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .left-column {
+            flex: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .right-column {
+            flex: 2;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .publications {
+            margin-top: 20px;
+        }
+        .publications li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
 <body>
-Coming soon...
+    <div class="container">
+        <div class="left-column">
+            <img src="/api/placeholder/200/200" alt="个人照片" class="profile-img">
+            <h1>张三</h1>
+            <p>PhD候选人</p>
+            <p>[您的大学名称]</p>
+            <div class="contact-info">
+                <p>邮箱: your.email@example.com</p>
+                <p>电话: +86 123 4567 8900</p>
+                <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>自我介绍</h2>
+            <p>我是[您的大学名称]的一名PhD候选人，专注于[您的研究领域]。我的研究旨在[简短描述您的研究目标或影响]。</p>
+            
+            <h2>研究兴趣</h2>
+            <ul>
+                <li>[研究兴趣1]</li>
+                <li>[研究兴趣2]</li>
+                <li>[研究兴趣3]</li>
+            </ul>
+            
+            <h2>教育背景</h2>
+            <ul>
+                <li>PhD in [专业], [大学名称], [预期毕业年份]</li>
+                <li>硕士 in [专业], [大学名称], [毕业年份]</li>
+                <li>学士 in [专业], [大学名称], [毕业年份]</li>
+            </ul>
+            
+            <h2>发表文章</h2>
+            <ul class="publications">
+                <li>Zhang, S., et al. (2023). "[论文标题1]". <i>Journal of Example Studies</i>, 45(2), 123-145.</li>
+                <li>Li, W., Zhang, S., et al. (2022). "[论文标题2]". <i>International Conference on Example Science</i>, pp. 234-256.</li>
+                <li>Wang, Y., Zhang, S., et al. (2021). "[论文标题3]". <i>Example Research Letters</i>, 12(3), 78-90.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
